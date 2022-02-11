@@ -56,7 +56,7 @@ function setResult(){
 
     var resultImg = document.createElement('img');
     const imgDiv = document.querySelector('.resultImg');
-    var imgURL = 'img/image-' + point + '.png'
+    var imgURL = 'start/img/image-' + point + '.png'
     resultImg.src = imgURL;
     resultImg.alt = point;
     imgDiv.appendChild(resultImg);
