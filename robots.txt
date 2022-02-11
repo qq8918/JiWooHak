@@ -1,0 +1,2 @@
+User-agent : *Allowl:/
+Sitemap : https://https://jiwoohak.netlify.app/sitemap.xml
