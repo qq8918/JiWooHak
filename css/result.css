@@ -3,6 +3,10 @@
   height: 100%;
 }
 
+#shareResult {
+  height: 100%;
+}
+
 .result__mainTitle {
   font-size: 50px;
 }

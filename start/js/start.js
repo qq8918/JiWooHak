@@ -1,3 +1,7 @@
+document.cookie = "safeCookie1=foo; SameSite=Lax";
+document.cookie = "safeCookie2=foo";
+document.cookie = "crossCookie=bar; SameSite=None; Secure";
+
 
 const main = document.querySelector('#main');
 const qna = document.querySelector('#qna');
@@ -123,7 +127,6 @@ function begin(){
 }
 
 function clip(){
-
 	var url = '';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
@@ -139,4 +142,5 @@ document.querySelector('.testStart').addEventListener('click', begin);
 document.querySelector('.resultGongyu').addEventListener('click', function(){
     window.location.reload()
 });
-document.querySelector('buttonGrayMedium').addEventListener('click', clip)
+document.querySelector('.buttonGrayMedium').addEventListener('click', clip);
+
