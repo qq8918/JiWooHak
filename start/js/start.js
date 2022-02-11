@@ -48,7 +48,6 @@ function calResult(){
             return 1;
         }
     })
-    console.log(resultArray);
     let resultword = resultArray[0].key;
     return resultword
 }
@@ -67,13 +66,11 @@ function setResult(){
 
     const resultdesc = document.querySelector('.resultDesc');
     resultdesc.innerHTML = infoList[point].desc
-    console.log(infoList[point].name)
 }
 
 function goResult(){
     qna.style.display ='none';
     result.style.display ='block';
-    console.log(select);
     setResult();
     
 }
