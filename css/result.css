@@ -40,6 +40,8 @@
 
 .resultImg {
   position: relative;
+  width: 100%;
+  margin: auto;
 }
 
 .resultImg img {
@@ -49,10 +51,11 @@
 .resultImg .resultName {
   background-color: red;
   position: absolute;
-  left: 45%;
-  bottom: -27px;
+  left: 40%;
+  right: 40%;
+  bottom: -28px;
   font-size: 20px;
-  padding: 10px 30px;
+  padding: 10px 0px;
   font-family: 'Noto Serif KR', serif;
   color: white;
 }
