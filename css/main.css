@@ -57,6 +57,12 @@ body {
   }
 }
 
+.testStart {
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
 @media screen and (max-width: 768px) {
   header .display-2 {
     font-size: 65px;
