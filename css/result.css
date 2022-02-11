@@ -37,8 +37,24 @@
   border-radius: 5px;
   font-size: 20px;
 }
+
+.resultImg {
+  position: relative;
+}
+
 .resultImg img {
   width: 100%;
+}
+
+.resultImg .resultName {
+  background-color: red;
+  position: absolute;
+  left: 45%;
+  bottom: -27px;
+  font-size: 20px;
+  padding: 10px 30px;
+  font-family: 'Noto Serif KR', serif;
+  color: white;
 }
 
 .resultDesc {
