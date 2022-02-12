@@ -5,6 +5,7 @@
 
 #shareResult {
   height: 100%;
+  display: block;
 }
 
 .result__mainTitle {
