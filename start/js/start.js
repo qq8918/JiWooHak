@@ -9,7 +9,7 @@ const qnaBox = document.querySelector('.qnaBox');
 const result = document.querySelector('#result')
 const endpoint = 12;
 const select = [];
-const qnaTopbanner = document.querySelector('.qna-Topbanner');
+const qnaTopbanner = document.querySelector('.qna-topBanner');
 const qnaBottombanner = document.querySelector('.qna-Bottombanner');
 
 function calResult(){
@@ -114,6 +114,7 @@ function begin(){
     main.style.WebkitAnimation = 'fadeOut 1s';
     main.style.animation = 'fadeOut 1s';
     
+    
     setTimeout(()=>{
         qnaBox.style.WebkitAnimation = 'fadeIn 1s';
         qnaBox.style.animation = 'fadeIn 1s';
@@ -126,7 +127,8 @@ function begin(){
         let qIdx = 0;
         goNext(qIdx);
     },450)
-    
+    qnaTopbanner.style.display ='block'
+    qnaBottombanner.style.display ='block'
 }
 
 function clip(){
