@@ -60,7 +60,7 @@ body {
 .testStart {
   padding: 30px;
   border-radius: 10px;
-  font-size: 25px;
+  font-size: 2px;
 }
 
 @media screen and (max-width: 768px) {
