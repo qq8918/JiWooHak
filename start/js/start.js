@@ -5,9 +5,12 @@ document.cookie = "crossCookie=bar; SameSite=None; Secure";
 
 const main = document.querySelector('#main');
 const qna = document.querySelector('#qna');
+const qnaBox = document.querySelector('.qnaBox');
 const result = document.querySelector('#result')
 const endpoint = 12;
 const select = [];
+const qnaTopbanner = document.querySelector('.qna-Topbanner');
+const qnaBottombanner = document.querySelector('.qna-Bottombanner');
 
 function calResult(){
     var pointArray = [
@@ -69,7 +72,7 @@ function setResult(){
 }
 
 function goResult(){
-    qna.style.display ='none';
+    qnaBox.style.display ='none';
     result.style.display ='block';
     setResult();
     
@@ -110,12 +113,15 @@ function goNext(qIdx) {
 function begin(){
     main.style.WebkitAnimation = 'fadeOut 1s';
     main.style.animation = 'fadeOut 1s';
+    
     setTimeout(()=>{
-        qna.style.WebkitAnimation = 'fadeIn 1s';
-        qna.style.animation = 'fadeIn 1s';
+        qnaBox.style.WebkitAnimation = 'fadeIn 1s';
+        qnaBox.style.animation = 'fadeIn 1s';
+
+        
         setTimeout(()=>{
             main.style.display = 'none';
-            qna.style.display = 'block';
+            qnaBox.style.display = 'block';
         },450)
         let qIdx = 0;
         goNext(qIdx);
