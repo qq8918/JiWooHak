@@ -12,17 +12,6 @@
   transform: translate(-50%, -50%);
 }
 
-.qna-topBanner {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-.qna-bottomBanner {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
 .answerBox button {
   width: 100%;
   background-color: white;

@@ -13,7 +13,7 @@ header .display-6 {
 #main {
   display: flex;
   flex-direction: column;
-  height: 100%;
+
   justify-content: space-around;
   background-image: url('../start/img/background.png');
   background-repeat: no-repeat;
