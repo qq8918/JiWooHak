@@ -55,6 +55,7 @@ function calResult(){
     return resultword
 }
 
+
 function setResult(){
     let point = calResult();
     const resultName = document.querySelector('.resultName')
@@ -65,6 +66,7 @@ function setResult(){
     var imgURL = 'start/img/image-' + point + '.png'
     resultImg.src = imgURL;
     resultImg.alt = point;
+    resultImg.classList.add('resultImg1')
     imgDiv.appendChild(resultImg);
 
     const resultdesc = document.querySelector('.resultDesc');
