@@ -49,7 +49,8 @@
 }
 
 .resultImg .resultName {
-  background-color: red;
+  background-color: #8b253c;
+  letter-spacing: 10px;
   position: absolute;
   left: 37%;
   right: 37%;
@@ -122,14 +123,16 @@
     width: 100px;
   }
   .resultImg .resultName {
-    background-color: red;
+    background-color: #8b253c;
     position: absolute;
     left: 37%;
     right: 37%;
     bottom: -22px;
-    font-size: 15px;
-    padding: 10px 0px;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-family: 'Noto Serif KR', serif;
     color: white;
+    letter-spacing: 3px;
   }
 }
