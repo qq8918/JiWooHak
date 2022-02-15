@@ -1,0 +1,21 @@
+body {
+  height: 100vh;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Noto Serif KR', serif;
+}
+
+.btn {
+  font-size: 1.4rem;
+}
+
+.resultJun {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

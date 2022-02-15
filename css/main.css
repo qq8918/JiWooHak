@@ -2,139 +2,15 @@ header {
   font-family: 'Black Han Sans', sans-serif;
 }
 
-header .display-5 {
-  margin-top: -5px;
+header .display-2 {
+  letter-spacing: 3px;
 }
 
 header .display-6 {
   font-family: 'Noto Serif KR', serif;
-}
-
-#main {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-around;
-  background-image: url('../start/img/background.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body {
-  height: 100vh;
-}
-
-.testStart {
-  font-family: 'Noto Serif KR', serif;
-  background-color: black;
-  color: white;
-  font-size: 30px;
-  border-radius: 20px;
+  font-size: 1.2rem;
 }
 
 .mainImg img {
   width: 100%;
-  height: 400px;
-}
-
-.main-banner {
-  height: 50px;
-}
-
-@media screen and (max-width: 1200px) {
-  header .display-2 {
-    font-size: 90px;
-  }
-
-  header .display-5 {
-    font-size: 60px;
-  }
-
-  .testStart {
-    padding: 30px;
-    font-size: 30px;
-    border-radius: 20px;
-  }
-
-  .mainImg img {
-    height: 400px;
-  }
-}
-
-.testStart {
-  padding: 30px;
-  border-radius: 10px;
-  font-size: 2px;
-}
-
-@media screen and (max-width: 768px) {
-  header .display-2 {
-    font-size: 65px;
-  }
-
-  header .display-5 {
-    font-size: 45px;
-  }
-
-  .testStart {
-    padding: 30px;
-    font-size: 30px;
-    border-radius: 20px;
-  }
-
-  .mainImg img {
-    max-width: 100%;
-    height: 280px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  header .display-2 {
-    font-size: 50px;
-  }
-
-  header .display-5 {
-    font-size: 35px;
-  }
-
-  header .display-6 {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 1.5rem;
-  }
-
-  .testStart {
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 20px;
-  }
-
-  .mainImg img {
-    height: 260px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  header .display-2 {
-    font-size: 40px;
-  }
-
-  header .display-5 {
-    font-size: 28px;
-  }
-
-  header .display-6 {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 1.25rem;
-  }
-
-  .testStart {
-    margin-bottom: 20px;
-    padding: 13px;
-    border-radius: 5px;
-    font-size: 17px;
-  }
-
-  .mainImg img {
-    max-width: 100%;
-  }
 }

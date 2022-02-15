@@ -52,30 +52,25 @@ function calResult(){
         }
     })
     let resultword = resultArray[0].key;
+    localStorage.setItem('list',JSON.stringify(resultArray))
     return resultword
 }
 
 function setResult(){
-    let point = calResult();
-    const resultName = document.querySelector('.resultName')
-    resultName.innerHTML = infoList[point].name;
-
-    var resultImg = document.createElement('img');
-    const imgDiv = document.querySelector('.resultImg');
-    var imgURL = 'start/img/image-' + point + '.png'
-    resultImg.src = imgURL;
-    resultImg.alt = point;
-    imgDiv.appendChild(resultImg);
-
-    const resultdesc = document.querySelector('.resultDesc');
-    resultdesc.innerHTML = infoList[point].desc
+    
 }
 
 function goResult(){
-    qnaBox.style.display ='none';
-    result.style.display ='block';
-    setResult();
-    
+    console.log(JSON.parse(localStorage.getItem('list')))
+
+    const resultName = document.querySelector('.resultName')
+    resultName.innerHTML = JSON.parse(localStorage.getItem('list'))[0].name
+    let 이미지추가 = document.createElement('img')
+    const 이미지파일 = document.querySelector('.resultImg')
+    이미지추가.src = `./start/img/image-${JSON.parse(localStorage.getItem('list'))[0].key}.png`
+    이미지파일.appendChild(이미지추가)
+    const 설명추가파일 = document.querySelector('.resultDesc')
+    설명추가파일.innerHTML= infoList[JSON.parse(localStorage.getItem('list'))[0].key].desc
 }
 
 function addAnswer(answerText,qIdx,idx){
@@ -98,7 +93,8 @@ function addAnswer(answerText,qIdx,idx){
 
 function goNext(qIdx) {
     if(qIdx === endpoint){
-        goResult();
+        calResult()
+        location.href='./resultJun.html'
         return
     }
     var q = document.querySelector('.qBox')
@@ -111,22 +107,8 @@ function goNext(qIdx) {
     status.style.width = (100/endpoint) * (qIdx+1) + '%'}
 
 function begin(){
-    main.style.WebkitAnimation = 'fadeOut 1s';
-    main.style.animation = 'fadeOut 1s';
-    
-    setTimeout(()=>{
-        qnaBox.style.WebkitAnimation = 'fadeIn 1s';
-        qnaBox.style.animation = 'fadeIn 1s';
-
-        
-        setTimeout(()=>{
-            main.style.display = 'none';
-            qnaBox.style.display = 'block';
-        },450)
-        let qIdx = 0;
-        goNext(qIdx);
-    },450)
-    
+    let qIdx = 0;
+    goNext(qIdx);
 }
 
 function clip(){
@@ -141,9 +123,7 @@ function clip(){
 	alert("URL이 복사되었습니다.")
 }
 
-document.querySelector('.testStart').addEventListener('click', begin);
-document.querySelector('.resultGongyu').addEventListener('click', function(){
-    window.location.reload()
-});
+
+
 document.querySelector('.buttonGrayMedium').addEventListener('click', clip);
 
