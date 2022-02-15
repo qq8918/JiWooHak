@@ -1,45 +1,110 @@
-* {
-  font-family: 'Noto Serif KR', serif;
-  text-align: center;
-}
-
 .qnaBox {
-  position: relative;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 100;
 }
 
-.qBox {
+#qna {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.qBox .qnaQ {
-  font-size: 1.3rem;
-}
-
-.qna__button {
-  border-radius: 10px;
-  background-color: white;
-}
-
-.qna__bottomBanner {
+.qna-bottomBanner {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+.answerBox button {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
 }
 
 .status {
   height: 20px;
   width: 80%;
   background-color: white;
-  border-radius: 20px;
   border: 1px solid black;
+  border-radius: 20px;
 }
 
 .statusBar {
   height: 100%;
-  border-radius: 20px;
-  background-color: black;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+12,666666+25,474747+39,2c2c2c+50,000000+51,111111+60,2b2b2b+76,1c1c1c+91,131313+100;Black+Gloss+%231 */
+  background: #4c4c4c; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #4c4c4c 0%,
+    #595959 12%,
+    #666666 25%,
+    #474747 39%,
+    #2c2c2c 50%,
+    #000000 51%,
+    #111111 60%,
+    #2b2b2b 76%,
+    #1c1c1c 91%,
+    #131313 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #4c4c4c 0%,
+    #595959 12%,
+    #666666 25%,
+    #474747 39%,
+    #2c2c2c 50%,
+    #000000 51%,
+    #111111 60%,
+    #2b2b2b 76%,
+    #1c1c1c 91%,
+    #131313 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #4c4c4c 0%,
+    #595959 12%,
+    #666666 25%,
+    #474747 39%,
+    #2c2c2c 50%,
+    #000000 51%,
+    #111111 60%,
+    #2b2b2b 76%,
+    #1c1c1c 91%,
+    #131313 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=0 ); /* IE6-9 */
+}
+
+.qBox {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-family: 'Noto Serif KR', serif;
+}
+
+.answerBox button {
+  margin: 10px;
+  padding: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Noto Serif KR', serif;
+}
+
+@media screen and (max-width: 768px) {
+  .qBox {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .answerBox button {
+    font-size: 14px;
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
 }
