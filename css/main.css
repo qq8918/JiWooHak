@@ -18,3 +18,7 @@ header .display-6 {
 .testStart {
   width: 30%;
 }
+
+.main__button button {
+  width: 130px;
+}
