@@ -11,6 +11,10 @@
   font-size: 50px;
 }
 
+.result__sub2Title {
+  font-family: 'Black Han Sans', sans-serif;
+}
+
 .result__subTitle {
   font-size: 40px;
   margin-right: 160px;
@@ -94,6 +98,10 @@
 @media screen and (max-width: 768px) {
   .result__mainTitle {
     font-size: 30px;
+  }
+
+  .result__sub2Title {
+    font-size: 24px;
   }
 
   .result__subTitle {
