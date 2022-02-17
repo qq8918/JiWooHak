@@ -17,7 +17,7 @@ function calResult(){
         {name : '최남라',value : 0, key : 0},
         {name : '서효령',value : 0, key : 1},
         {name : '예비좀비3',value : 0, key : 2},
-        {name : '과학선생님',value : 0, key : 3},
+        {name : '과학선생',value : 0, key : 3},
         {name : '담임쌤',value : 0, key : 4},
         {name : '남온조',value : 0, key : 5},
         {name : '실종자598번',value : 0, key : 6},
@@ -25,7 +25,7 @@ function calResult(){
         {name : '이수혁',value : 0, key : 8},
         {name : '귤까는 소리(bj)',value : 0, key : 9},
         {name : '박미진',value : 0, key : 10},
-        {name : '교장선생님',value : 0, key : 11},
+        {name : '교장',value : 0, key : 11},
         {name : '온조아빠',value : 0, key : 12},
         {name : '학년부장',value : 0, key : 13},
         {name : '이청산',value : 0, key : 14},
@@ -56,21 +56,10 @@ function calResult(){
     return resultword
 }
 
-function setResult(){
-    
-}
+document.querySelector('.resultGo').addEventListener('click',goResult)
 
 function goResult(){
-    console.log(JSON.parse(localStorage.getItem('list')))
-
-    const resultName = document.querySelector('.resultName')
-    resultName.innerHTML = JSON.parse(localStorage.getItem('list'))[0].name
-    let 이미지추가 = document.createElement('img')
-    const 이미지파일 = document.querySelector('.resultImg')
-    이미지추가.src = `./start/img/image-${JSON.parse(localStorage.getItem('list'))[0].key}.png`
-    이미지파일.appendChild(이미지추가)
-    const 설명추가파일 = document.querySelector('.resultDesc')
-    설명추가파일.innerHTML= infoList[JSON.parse(localStorage.getItem('list'))[0].key].desc
+    window.location.href = `./result-${[JSON.parse(localStorage.getItem('list'))[0].key]}.html`
 }
 
 function addAnswer(answerText,qIdx,idx){
