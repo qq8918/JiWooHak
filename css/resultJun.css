@@ -19,3 +19,7 @@ main {
   bottom: 0;
   width: 100%;
 }
+
+.resultGo {
+  font-size: 1.1rem;
+}
